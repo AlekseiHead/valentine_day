@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster:regular);
+
+body {
+    background: #1d1f20;
+    color: #9c003c;
+    font-family: sans-serif;
+    background: #43cea2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #185a9d,
+        #43cea2
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #185a9d,
+        #43cea2
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text {
+    font-family: "Lobster";
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    background: linear-gradient(45deg, #002a6d 33%, #ff3381 66%, #8aa9d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #002a6d;
+    display: table;
+}
+
+.rhombus2 {
+    margin: 40px 0 0 60px;
+    /*background: #fcfcfc;*/
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    float: center;
+    animation-delay: 0.9s;
+    animation-duration: 0.5s;
+    animation-name: pump;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.26, -0.53, 0.57, 2.32);
+}
+
+.rhombus2:before {
+    content: "";
+    position: absolute;
+    background: #ff3381;
+    height: 40px;
+    width: 40px;
+    z-index: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+}
+
+.rhombus2 .circle21 {
+    content: "";
+    position: absolute;
+    background: #ff3381;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+.rhombus2 .circle22 {
+    content: "";
+    position: absolute;
+    background: #ff3381;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    margin-left: 30px;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes pump {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
